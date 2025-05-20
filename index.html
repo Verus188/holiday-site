@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Great+Vibes&family=Inter:ital,opsz,wght@0,14..32,312;1,14..32,312&family=Jersey+10&family=Jersey+15&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Pixelify+Sans&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Rubik+Vinyl&display=swap"
+      rel="stylesheet"
+    />
+    <title>Праздник в каждый дом</title>
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <a href="" class="logo__href">
+          <img src="src/logo.svg" alt="" class="logo__img" />
+          <p class="logo__text">Праздник в каждый дом</p>
+        </a>
+      </div>
+      <nav class="navigation">
+        <a class="navigation__button" href="">Акции</a>
+        <a class="navigation__button" href="">Поиск</a>
+        <a class="navigation__button" href="">Бронирование</a>
+      </nav>
+    </header>
+    <main>
+      <section class="about">
+        <div class="slogan">
+          <h1 class="slogan__slogan">
+            <span class="slogan__span">Ваши эмоции</span> — наша главная цель
+          </h1>
+        </div>
+
+        <div class="about-us">
+          <div class="about-us__block">
+            <img src="src/wedding.avif" alt="Свадьбы" />
+            <p class="about-us__text">
+              Мы — команда профессиональных организаторов с 10-летним опытом в
+              проведении мероприятий любого масштаба.
+            </p>
+          </div>
+          <div class="about-us__block">
+            <img src="src/quest.jpg" alt="Квесты" />
+            <p class="about-us__text">
+              Свадьбы, корпоративы, детские праздники или грандиозные фестивали
+              — для нас нет невозможного!
+            </p>
+          </div>
+          <div class="about-us__block">
+            <img src="src/corporation.jpg" alt="Корпоративы" />
+            <p class="about-us__text">
+              Наш секрет — внимание к деталям, индивидуальный подход и
+              безграничная любовь к тому, что мы делаем.
+            </p>
+          </div>
+        </div>
+
+        <div class="recomendations">
+          <h1 class="recomendations__header">Нас рекомендуют</h1>
+          <div class="recomendations__comment">
+            <p class="recomendations__comment__text">
+              «Свадьба, о которой мы мечтали! Всё продумано до мелочей — даже
+              дождь не испортил наш день благодаря запасному плану команды».
+            </p>
+            <p class="recomendations__comment__author">
+              — Алина и Максим, свадьба в июне 2024.
+            </p>
+          </div>
+          <div class="recomendations__comment">
+            <p class="recomendations__comment__text">
+              «Корпоратив на 100 человек? Для этих профессионалов — как дважды
+              два. Никакого стресса, только восторг от результата!»
+            </p>
+            <p class="recomendations__comment__author">
+              — ООО «СтарТех», декабрь 2023.
+            </p>
+          </div>
+          <div class="recomendations__comment">
+            <p class="recomendations__comment__text">
+              «Дочка сказала: “Мама, это был лучший день!”. Аниматоры,
+              украшения, квест — всё на высшем уровне».
+            </p>
+            <p class="recomendations__comment__author">
+              — Виктория, детский день рождения.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="book-event">
+        <div class="book-event__description">
+          <div class="book-event__slogan-block">
+            <p class="book-event__description__slogan">
+              Мечтаете — мы воплощаем!
+            </p>
+            <p class="book-event__description__text">
+              Праздник — это не просто дата в календаре. Это история, которую вы
+              будете вспоминать годами. Давайте напишем её вместе!
+            </p>
+          </div>
+          <div class="book-event__pucture-block">
+            <div class="book-event__picture-container2">
+              <img class="book-event__lasertag" src="src/lasertag.jpg" alt="" />
+            </div>
+            <div class="book-event__picture-container1">
+              <img class="book-event__birthday" src="src/birthday.jpg" alt="" />
+            </div>
+          </div>
+        </div>
+        <div class="book-event__form-container">
+          <h1 class="book-event__form-header">Запланировать мероприятие</h1>
+          <form class="book-event__form">
+            <label for="region-select">Выбор региона: </label>
+            <select
+              name="region"
+              id="region-select"
+              class="book-event__form__select"
+            >
+              <option value="Moscow">--Выбрать регион--</option>
+              <option value="Moscow">Московская область</option>
+              <option value="Volgograd">Волгоградская область</option>
+            </select>
+
+            <label for="date-select">Выбор даты: </label>
+            <input type="date" />
+
+            <label for="guests-select">Выбор количества участников: </label>
+            <input type="number" min="0" max="50" />
+
+            <div></div>
+            <button class="book-event__button">Поиск</button>
+          </form>
+        </div>
+      </section>
+
+      <section>Как забронировать мероприятие?</section>
+    </main>
+  </body>
+</html>
