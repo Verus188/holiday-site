@@ -1,3 +1,9 @@
+:root {
+  --mainColor: rgb(58, 170, 53);
+  --mainHeaderColor: rgb(51, 51, 51);
+  --mainTextColor: rgb(118, 118, 118);
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +22,7 @@
 header {
   display: flex;
   padding: 0 15px;
-  background-color: rgb(58, 170, 53);
+  background-color: var(--mainColor);
   height: 80px;
   width: 100%;
   justify-content: space-between;
@@ -62,7 +68,7 @@ header {
 
 .navigation__button:hover {
   transition: all 0.15s ease-in;
-  color: rgb(58, 170, 53);
+  color: var(--mainColor);
   background-color: white;
 }
 
@@ -102,7 +108,7 @@ main {
 }
 
 .slogan__span {
-  background-color: rgb(58, 170, 53);
+  background-color: var(--mainColor);
   color: white;
   padding: 3px 10px;
   border-radius: 10px;
@@ -291,4 +297,134 @@ button:hover {
 .book-event__form__select {
   text-align: center;
   padding: 2px 5px;
+}
+
+.action {
+  margin: 80px 80px;
+  border: var(--mainColor) solid 1px;
+  border-radius: 10px;
+
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.action__actions {
+  padding: 30px 120px;
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.action__action-block {
+  padding: 20px 30px;
+  border: var(--mainColor) solid 1px;
+  border-radius: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.action__action-header {
+  color: var(--mainHeaderColor);
+}
+
+.action__action-text {
+  color: var(--mainTextColor);
+}
+
+.action__info-button {
+  border: var(--mainColor) solid 1px;
+  color: var(--mainColor);
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+  width: 60%;
+
+  align-self: center;
+}
+
+.action__info-button:hover {
+  color: white;
+  background-color: var(--mainColor);
+
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.action__button {
+  border: var(--mainColor) solid 1px;
+  color: var(--mainColor);
+
+  align-self: center;
+  width: 30%;
+}
+
+.action__button:hover {
+  color: white;
+  background-color: var(--mainColor);
+
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.action__action-img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.action__email-block {
+  text-align: center;
+  padding: 20px 30px;
+  border: var(--mainColor) solid 1px;
+  border-radius: 10px;
+
+  margin: 30px 50px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.action__input {
+  font-size: 15px;
+
+  color: var(--mainTextColor);
+  border: 1px solid var(--mainColor);
+  border-radius: 25px;
+  padding: 5px 30px;
+
+  transition: color 0.5s ease-in-out;
+  transition: background-color 0.5s ease-in-out;
+}
+
+.main-footer {
+  background-color: var(--mainColor);
+  min-height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+
+.main-footer > * {
+  align-self: center;
+}
+
+.main-footer__navigation {
+  display: flex;
+  gap: 30px;
+}
+
+.main-footer__navigation-link:hover {
+  transition: color 0.5s;
+  color: var(--mainTextColor);
+}
+
+.main-footer__text {
+  transition: color 0.5s;
+  font-size: 18px;
+  color: white;
+  font-family: "Commissioner", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "FLAR" 0, "VOLM" 0;
 }
