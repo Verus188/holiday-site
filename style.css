@@ -4,6 +4,10 @@
   --mainTextColor: rgb(118, 118, 118);
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -289,8 +293,8 @@ button {
 }
 
 .book-event__form > input,
-select,
-button {
+.book-event__form > select,
+.book-event__form > a {
   font-size: 15px;
   height: fit-content;
 
@@ -305,8 +309,8 @@ button {
 }
 
 .book-event__form > input:hover,
-select:hover,
-button:hover {
+.book-event__form > select:hover,
+.book-event__form > a:hover {
   transition: color 0.5s ease-in-out;
   transition: background-color 0.5s ease-in-out;
   background-color: white;
@@ -315,6 +319,7 @@ button:hover {
 
 .book-event__button {
   height: fit-content;
+  text-align: center;
 }
 
 .book-event__form__select {
@@ -475,6 +480,11 @@ button:hover {
   height: fit-content;
 }
 
+.search-results__select {
+  width: 5%;
+  padding: 3px 6px;
+}
+
 .search-results__block > h2 {
   color: var(--mainHeaderColor);
 }
@@ -500,6 +510,7 @@ button:hover {
 
 .search-results__img {
   border-radius: 10px;
+  width: 50%;
 }
 
 .booking {
@@ -585,4 +596,38 @@ button:hover {
 .booking__button {
   margin-top: 40px;
   padding: 3px 6px;
+}
+
+.guide {
+  margin-top: 100px;
+  padding: 0px 30px;
+}
+
+.guide__header {
+  width: fit-content;
+}
+
+.guide__steps-container {
+  display: flex;
+  gap: 20px;
+}
+
+.guide__step {
+  width: 30%;
+  border-radius: 10px;
+  padding: 15px 20px;
+  border: var(--mainColor) 1px solid;
+}
+
+.guide__step-img {
+  width: 100%;
+  height: auto;
+}
+
+.guide__step-header {
+  width: fit-content;
+}
+
+.guide__step-text {
+  width: fit-content;
 }

@@ -21,9 +21,9 @@
         </a>
       </div>
       <nav class="navigation">
-        <a class="navigation__button" href="">Акции</a>
+        <a class="navigation__button" href="#action">Акции</a>
         <a class="navigation__button" href="search.html">Поиск</a>
-        <a class="navigation__button" href="">Бронирование</a>
+        <a class="navigation__button" href="booking.html">Бронирование</a>
       </nav>
     </header>
     <main>
@@ -131,16 +131,48 @@
             <input type="number" min="0" max="50" />
 
             <div></div>
-            <button class="book-event__button">Поиск</button>
+            <a href="search.html" class="book-event__button">Поиск</a>
           </form>
         </div>
       </section>
 
-      <section>
-        <h1>Как забронировать мероприятие?</h1>
+      <section class="guide">
+        <h1 class="guide__header">Как забронировать мероприятие?</h1>
+        <div class="guide__steps-container">
+          <div class="guide__step">
+            <img class="guide__step-img" src="src/steps/step1.png" alt="" />
+            <h2 class="guide__step-header">Шаг 1</h2>
+            <p class="guide__step-text">
+              Заполните информацию для поиска подходящих вариантов.
+            </p>
+          </div>
+          <div class="guide__step">
+            <div>
+              <img class="guide__step-img" src="src/steps/step2.png" alt="" />
+            </div>
+            <h2 class="guide__step-header">Шаг 2</h2>
+            <p class="guide__step-text">Выберите одну из доступных зон.</p>
+          </div>
+          <div class="guide__step">
+            <div>
+              <img class="guide__step-img" src="src/steps/step3.png" alt="" />
+            </div>
+            <h2 class="guide__step-header">Шаг 3</h2>
+            <p class="guide__step-text">Выберите понравившуюся локацию.</p>
+          </div>
+          <div class="guide__step">
+            <div>
+              <img class="guide__step-img" src="src/steps/step4.png" alt="" />
+            </div>
+            <h2 class="guide__step-header">Шаг 4</h2>
+            <p class="guide__step-text">
+              Выберте дополнительные услуги и проверьте заказ.
+            </p>
+          </div>
+        </div>
       </section>
 
-      <section class="action">
+      <section id="action" class="action">
         <div class="action__actions">
           <div class="action__action-block">
             <img
