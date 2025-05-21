@@ -605,29 +605,43 @@ button {
 
 .guide__header {
   width: fit-content;
+  color: var(--mainHeaderColor);
 }
 
 .guide__steps-container {
+  margin-top: 30px;
   display: flex;
   gap: 20px;
 }
 
 .guide__step {
+  height: 400px;
   width: 30%;
   border-radius: 10px;
   padding: 15px 20px;
   border: var(--mainColor) 1px solid;
+
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.guide__step-img-block {
+  width: 100%;
+  height: 70%;
 }
 
 .guide__step-img {
-  width: 100%;
-  height: auto;
+  width: auto;
+  height: 100%;
 }
 
 .guide__step-header {
+  color: var(--mainHeaderColor);
   width: fit-content;
 }
 
 .guide__step-text {
+  color: var(--mainTextColor);
   width: fit-content;
 }
